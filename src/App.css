@@ -43,3 +43,10 @@
 #welcome {
   color: green;
 }
+.home {
+  color: blue;
+  margin-right: auto;
+  float: left;
+  border: darkblue solid;
+  padding: auto;
+}
