@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./Header.jsx";
-
+import ArticlesManager from "./ArticlesManager";
 function App() {
   const [signedInUser, setSignedInUser] = useState(null);
   useEffect(() => {
@@ -19,10 +19,13 @@ function App() {
   return (
     <>
       {signedInUser && (
-        <Header
-          username={signedInUser.username}
-          avatar_url={signedInUser.avatar_url}
-        />
+        <>
+          <Header
+            username={signedInUser.username}
+            avatar_url={signedInUser.avatar_url}
+          />
+          <ArticlesManager />
+        </>
       )}
     </>
   );
