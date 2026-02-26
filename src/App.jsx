@@ -4,6 +4,7 @@ import Header from "./Header.jsx";
 import ArticlesManager from "./ArticlesManager";
 import { Routes, Route } from "react-router-dom";
 import SingleArticle from "./SingleArticle";
+import CommentManager from "../CommentManager.jsx";
 function App() {
   const [signedInUser, setSignedInUser] = useState(null);
   useEffect(() => {

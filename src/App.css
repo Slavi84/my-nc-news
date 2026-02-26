@@ -50,3 +50,45 @@
   border: darkblue solid;
   padding: auto;
 }
+.comments-section {
+  margin-top: 2rem;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-date {
+  color: #666;
+}
+
+.comment-body {
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.4;
+}
+
+.comment-votes {
+  font-size: 0.85rem;
+  color: #444;
+}

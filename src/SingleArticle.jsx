@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import CommentManager from "../CommentManager";
 
 function SingleArticle() {
   const { article_id } = useParams();
@@ -32,6 +33,7 @@ function SingleArticle() {
       <p>Published: {new Date(article.created_at).toLocaleDateString()}</p>
       <p>Votes: {article.votes}</p> <p>Comments: {article.comment_count}</p>
       <p>{article.body}</p>
+      <CommentManager article_id={article_id} />
     </article>
   );
 }
